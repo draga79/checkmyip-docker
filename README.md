@@ -8,10 +8,10 @@ From the github page of "checkmyip":
 
 The container will expose ports 22, 23 and 80. So usage could be:
 
-`docker run --rm -p 80:80 -p 22:22 -p 23:23 dragas/checkmyip`
+`docker run --rm -d -p 80:80 -p 22:22 -p 23:23 dragas/checkmyip`
 
 If you don't want to expose privileged ports, you can change to something like this:
 
-`docker run --rm -p 8000:80 -p 2222:22 -p 2223:23 dragas/checkmyip`
+`docker run --rm -d -p 8000:80 -p 2222:22 -p 2223:23 dragas/checkmyip`
 
 Have fun!
