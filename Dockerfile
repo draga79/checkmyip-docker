@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.9
 MAINTAINER Stefano Marinelli <stefano@dragas.it>
 
 RUN apk add --no-cache git python py-jinja2 py-paramiko && git clone https://github.com/PackeTsar/checkmyip.git && apk del --no-cache git
